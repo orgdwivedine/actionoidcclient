@@ -18,7 +18,7 @@ inputs:
     required: false
 outputs:
   id_token:
-    description: 'ID token from OIDC provider'
+    response_json: 'Response from OIDC provider'
 runs:
   using: 'node12'
   main: 'index.js'
