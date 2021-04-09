@@ -17,8 +17,8 @@ inputs:
     description: 'Scope'
     required: false
 outputs:
-  id_token:
-    response_json: 'Response from OIDC provider'
+  response_json:
+    description: 'Response from OIDC provider'
 runs:
   using: 'node12'
   main: 'index.js'
