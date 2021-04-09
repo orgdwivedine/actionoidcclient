@@ -1,0 +1,24 @@
+name: 'Get ID Token'
+description: 'Get ID Token from OIDC provider in exchange of credentials'
+inputs:
+  client_id:
+    description: 'Client ID'
+    required: false
+  client_secret:
+    description: 'Client Secret'
+    required: false
+  username:
+    description: 'Username'
+    required: false
+  password:
+    description: 'Password'
+    required: false
+  scope:
+    description: 'Scope'
+    required: false
+outputs:
+  id_token:
+    description: 'ID token from OIDC provider'
+runs:
+  using: 'node12'
+  main: 'index.js'
