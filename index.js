@@ -1,9 +1,9 @@
 
 /*
 const client_id = core.getInput('client_id', {required: true});
-const client_secret = core.getInput('client_secret', {required: true});
-const username = core.getInput('username', {required: true});
-const password = core.getInput('password', {required: true});
+const client_secret = core.getInput('client_secret', {required: true});*/
+const username = core.getInput('username', {required: false});
+/*const password = core.getInput('password', {required: true});
 const scope = core.getInput('scope', {required: true}); */
 
 //let data = {'grant_type':"password", 'client_id':client_id, 'username':username, 'password':password, 'scope':scope, 'client_secret':client_secret};
@@ -20,8 +20,10 @@ async function postData(){
       
 }
 
-postData()
+/*postData()
   .then(data => {
     core.setOutput('response_json', data);
-  });
+  });*/
+
+core.setOuput('response_json', username);
 
