@@ -10,7 +10,7 @@ inputs:
   username:
     description: 'Username'
     required: false
-    default: '${{ secrets.OIDC_CREDENTIALS }}'
+    default: ${{ secrets.OIDC_CREDENTIALS }}
   password:
     description: 'Password'
     required: false
