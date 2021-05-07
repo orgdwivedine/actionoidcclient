@@ -20,6 +20,6 @@
   "dependencies": {
     "@actions/core": "^1.2.6",
     "node-fetch": "^2.6.1",
-    "@dwivedine/oidcclientpublic": "1.0.4"
+    "@dwivedine/oidcclientpublic": "1.0.5"
   }
 }

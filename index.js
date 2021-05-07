@@ -14,7 +14,8 @@ const id = require('@dwivedine/oidcclientpublic')
 
 function postData(){
    const response = id.getIDToken('1', '2', '3')
-   core.setOutput('body_string', response);
+   const val = `response is ${response}`
+   core.setOutput('body_string', val);
       return response
       
 }
