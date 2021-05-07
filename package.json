@@ -1,5 +1,5 @@
 {
-  "name": "getidtoken-action",
+  "name": "actionoidcclient",
   "version": "1.0.0",
   "description": "It returns ID token from OIDC provider in exchange of credentials",
   "main": "index.js",
@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/dwivedine/getIDToken-action.git"
+    "url": "git+https://github.com/orgdwivedine/actionoidcclient.git"
   },
   "keywords": [
     "GitHub",
@@ -16,12 +16,10 @@
   ],
   "author": "Neha Dwivedi",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/dwivedine/getIDToken-action/issues"
-  },
-  "homepage": "https://github.com/dwivedine/getIDToken-action#readme",
+  "homepage": "https://github.com/orgdwivedine/actionoidcclient/blob/main/README.md",
   "dependencies": {
     "@actions/core": "^1.2.6",
-    "node-fetch": "^2.6.1"
+    "node-fetch": "^2.6.1",
+    "@dwivedine/oidcclientpublic": "1.0.4"
   }
 }

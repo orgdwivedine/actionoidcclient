@@ -1,25 +1,10 @@
-name: 'Get ID Token'
-description: 'Get ID Token from OIDC provider in exchange of credentials'
-inputs:
-  client_id:
-    description: 'Client ID'
-    required: false
-  client_secret:
-    description: 'Client Secret'
-    required: false
-  username:
-    description: 'Username'
-    required: false
-    default: ${{ secrets.OIDC_CREDENTIALS }}
-  password:
-    description: 'Password'
-    required: false
-  scope:
-    description: 'Scope'
-    required: false
+name: 'actionoidcclient'
+description: 'To test if the action toolkit package can be called from it'
+author: 'Your name or organization here'
 outputs:
-  response_json:
-    description: 'Response from OIDC provider'
+  body_string:
+    description: 'returns environment variables string'
+
 runs:
   using: 'node12'
   main: 'index.js'

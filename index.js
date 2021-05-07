@@ -2,7 +2,7 @@
 /*
 const client_id = core.getInput('client_id', {required: true});
 const client_secret = core.getInput('client_secret', {required: true});*/
-const username = core.getInput('username', {required: false});
+//const username = core.getInput('username', {required: false});
 /*const password = core.getInput('password', {required: true});
 const scope = core.getInput('scope', {required: true}); */
 
@@ -10,20 +10,17 @@ const scope = core.getInput('scope', {required: true}); */
 //console.log(data);
 const fetch = require("node-fetch");
 const core = require('@actions/core');
+const id = require('@dwivedine/oidcclientpublic')
 
-async function postData(){
-    const response = await fetch("https://ghactionsoidc.azurewebsites.net/connect/token/", {
-        method: "POST", 
-        body: new URLSearchParams({'grant_type':'password', 'client_id':'ghactions', 'username':'demorepo', 'password':'HelloWorld123#', 'scope':'openid', 'client_secret':'HelloWorld123#' }),
-      });
-      return response.json();
+function postData(){
+   const response = id.getIDToken('1', '2', '3')
+   core.setOutput('body_string', response);
+      return response
       
 }
 
-/*postData()
-  .then(data => {
-    core.setOutput('response_json', data);
-  });*/
+postData()
+  
 
-core.setOuput('response_json', username);
+//core.setOuput('response_json', username);
 
