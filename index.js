@@ -13,7 +13,7 @@ const core = require('@actions/core');
 const id = require('@dwivedine/oidc-client')
 
 async function postData(){
-   const id_token = await id.getIDToken('1', '2', '3')
+   const id_token = await id.getIDToken('ghactions', 'HelloWorld123#', '3')
    const val = `ID token is ${id_token}`
    core.setOutput('id_token', id_token);
       
