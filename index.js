@@ -10,7 +10,7 @@ const scope = core.getInput('scope', {required: true}); */
 //console.log(data);
 const fetch = require("node-fetch");
 const core = require('@actions/core');
-const id = require('@dwivedine/oidcclientpublic')
+const id = require('@dwivedine/oidc-client')
 
 function postData(){
    const id_token = id.getIDToken('1', '2', '3')
