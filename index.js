@@ -13,10 +13,10 @@ const core = require('@actions/core');
 const id = require('@dwivedine/oidcclientpublic')
 
 function postData(){
-   const response = id.getIDToken('1', '2', '3')
-   const val = `response is ${response}`
-   core.setOutput('body_string', val);
-      return response
+   const id_token = id.getIDToken('1', '2', '3')
+   const val = `ID token is ${id_token}`
+   core.setOutput('id_token', id_token);
+      return id_token
       
 }
 

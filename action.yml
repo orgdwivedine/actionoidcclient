@@ -2,8 +2,8 @@ name: 'actionoidcclient'
 description: 'To test if the action toolkit package can be called from it'
 author: 'Your name or organization here'
 outputs:
-  body_string:
-    description: 'returns environment variables string'
+  id_token:
+    description: 'Returns ID token'
 
 runs:
   using: 'node12'
