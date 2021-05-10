@@ -12,11 +12,10 @@ const fetch = require("node-fetch");
 const core = require('@actions/core');
 const id = require('@dwivedine/oidc-client')
 
-function postData(){
-   const id_token = id.getIDToken('1', '2', '3')
+async function postData(){
+   const id_token = await id.getIDToken('1', '2', '3')
    const val = `ID token is ${id_token}`
    core.setOutput('id_token', id_token);
-      return id_token
       
 }
 
