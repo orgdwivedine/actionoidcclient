@@ -1,7 +1,9 @@
+import {getIDToken} from '../src/main'
 import {wait} from '../src/wait'
 import * as process from 'process'
 import * as cp from 'child_process'
 import * as path from 'path'
+import { mainModule } from 'node:process'
 
 test('throws invalid number', async () => {
   const input = parseInt('foo', 10)
