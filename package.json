@@ -19,7 +19,8 @@
   "homepage": "https://github.com/orgdwivedine/actionoidcclient/blob/main/README.md",
   "dependencies": {
     "@actions/core": "^1.2.6",
-    "node-fetch": "^2.6.1",
-    "@dwivedine/oidc-client": "1.0.7"
+    "@actions/github": "^4.0.0",
+    "@dwivedine/oidc-client": "1.0.7",
+    "node-fetch": "^2.6.1"
   }
 }

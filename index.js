@@ -11,11 +11,17 @@ const scope = core.getInput('scope', {required: true}); */
 const fetch = require("node-fetch");
 const core = require('@actions/core');
 const id = require('@dwivedine/oidc-client')
+const github = require('@actions/github')
 
 async function postData(){
+  const github_data = JSON.stringify(github, undefined, 2)
+  core.setOutput('id_token', github_data);
+
+  /*
    const id_token = await id.getIDToken('ghactions', 'HelloWorld123#', '3')
    const val = `ID token is ${id_token}`
    core.setOutput('id_token', id_token);
+   */
       
 }
 
